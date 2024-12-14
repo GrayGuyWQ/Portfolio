@@ -8,234 +8,195 @@
     <script src="script.js" defer></script>
 <style>
     /* Basic Reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
 
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #1e272e;
-    color: #fff;
-    line-height: 1.6;
-}
+    a {
+        color:aqua
+    }
+    a:hover {
+        color:#0097e6
+    }
+    a:visited {
+        color:firebrick
+    }
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: #1e272e;
+        color: #fff;
+        line-height: 1.6;
+    }
 
-header {
-    background: #2f3640;
-    padding: 1rem;
-    text-align: center;
-}
+    header {
+        background: #2f3640;
+        padding: 1rem;
+        text-align: center;
+    }
 
-header h1 {
-    font-size: 2.5rem;
-}
+    header h1 {
+        font-size: 2.5rem;
+    }
 
-nav ul {
-    display: flex;
-    justify-content: center;
-    list-style-type: none;
-    margin-top: 1rem;
-}
+    h2 {
+        text-align: center;
+    }
+    nav ul {
+        display: flex;
+        justify-content: center;
+        list-style-type: none;
+        margin-top: 1rem;
+    }
 
-nav li {
-    margin: 0 1rem;
-}
+    nav li {
+        margin: 0 1rem;
+    }
 
-nav a {
-    color: #00a8ff;
-    text-decoration: none;
-    font-size: 1.2rem;
-}
+    nav a {
+        color: #00a8ff;
+        text-decoration: none;
+        font-size: 1.2rem;
+    }
 
-.hero {
-    background: url('images/cyber-bg.webp') no-repeat center center/cover;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-}
+    .hero {
+        background: url('images/cyber-bg.webp') no-repeat center center/cover;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
 
-.hero h2 {
-    font-size: 3rem;
-    color: #fff;
-}
+    .hero h2 {
+        font-size: 3rem;
+        color: #fff;
 
-.hero p {
-    font-size: 1.2rem;
-    margin: 1rem 0;
-}
+    }
 
-.cta-button {
-    background: #00a8ff;
-    color: #fff;
-    padding: 0.8rem 1.5rem;
-    text-decoration: none;
-    border-radius: 5px;
-    transition: background 0.3s ease;
-}
+    .hero p {
+        font-size: 1.2rem;
+        margin: 1rem 0;
+    }
 
-.cta-button:hover {
-    background: #0097e6;
-}
+    .cta-button {
+        background: #00a8ff;
+        color: #fff;
+        padding: 0.8rem 1.5rem;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background 0.3s ease;
+    }
 
-.grid-section {
-    padding: 2rem 0;
-}
+    .cta-button:hover {
+        background: #0097e6;
+    }
 
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 2rem;
-    width: 80%;
-    margin: 0 auto;
-}
+    .grid-section {
+        padding: 2rem 0;
+    }
 
-.project-card {
-    background: #353b48;
-    border-radius: 10px;
-    overflow: hidden;
-    transition: transform 0.3s ease;
-}
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 2rem;
+        width: 80%;
+        margin: 0 auto;
+    }
 
-.project-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-}
+    .project-card {
+        background: #353b48;
+        border-radius: 10px;
+        overflow: hidden;
+        transition: transform 0.3s ease;
+    }
 
-.project-card:hover {
-    transform: scale(1.05);
-}
+    .project-card img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+    }
 
-.project-info {
-    padding: 1rem;
-}
+    .project-card:hover {
+        transform: scale(1.05);
+    }
 
-.flex-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 2rem 0;
-    width: 80%;
-    margin: 0 auto;
-}
+    .project-info {
+        padding: .75rem;
+    }
 
-.skills-info {
-    flex-basis: 50%;
-}
+    .flex-section {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 2rem 0;
+        width: 80%;
+        margin: 0 auto;
+    }
 
-.skills-image img {
-    width: 100%;
-    border-radius: 10px;
-}
+    .skills-info {
+        flex-basis:;
+    }
 
-.testimonials-container {
-    display: flex;
-    justify-content: space-around;
-    padding: 2rem 0;
-}
 
-.testimonial {
-    background: #353b48;
-    padding: 1rem;
-    border-radius: 10px;
-    width: 40%;
-    text-align: center;
-}
 
-#contact {
-    background: #2f3640;
-    padding: 2rem;
-    text-align: center;
-}
+    .skills-image img {
+        width: 100%;
+        border-radius: 10px;
+    }
 
-#contact-form input, 
-#contact-form textarea {
-    width: 100%;
-    padding: 0.8rem;
-    margin-bottom: 1rem;
-    border: none;
-    border-radius: 5px;
-}
+    .testimonials-container {
+        display: flex;
+        justify-content: space-around;
+        padding: 2rem 0;
+    }
 
-#contact-form button {
-    background: #00a8ff;
-    color: white;
-    padding: 0.8rem 1.5rem;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-}
+    .testimonial {
+        background: #353b48;
+        padding: 1rem;
+        border-radius: 10px;
+        width: 40%;
+        text-align: center;
+    }
 
-#contact-form button:hover {
-    background: #0097e6;
-}
+    #contact {
+        background: #2f3640;
+        padding: 2rem;
+        text-align: center;
+        display: none
+    }
 
-footer {
-    background: #353b48;
-    color: #fff;
-    text-align: center;
-    padding: 1rem;
-}
-.carousel {
-    overflow: hidden;
-    position: relative;
-    width: 100%; /* Full width */
-    height: 300px; /* Set a height for the carousel */
-}
+    #contact-form input, 
+    #contact-form textarea {
+        width: 100%;
+        padding: 0.8rem;
+        margin-bottom: 1rem;
+        border: none;
+        border-radius: 5px;
+    }
 
-.carousel-inner {
-    display: flex;
-    animation: slide 16s infinite; /* 4 cards x 4 seconds = 16 seconds */
-}
+    #contact-form button {
+        background: #00a8ff;
+        color: white;
+        padding: 0.8rem 1.5rem;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background 0.3s ease;
+    }
 
-.card {
-    flex: 1 0 100%; /* Each card takes up 100% of the carousel */
-    background-color: #9b2d2d;
-    border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    text-align: center;
-}
+    #contact-form button:hover {
+        background: #0097e6;
+    }
 
-.card h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-}
-
-.card p {
-    font-size: 1em;
-    margin-bottom: 15px;
-}
-
-.card a {
-    background-color: #007bff;
-    color: white;
-    padding: 10px 15px;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
-.card a:hover {
-    background-color: #0056b3;
-}
-
-@keyframes slide {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(0); }
-    25% { transform: translateX(-100%); }
-    45% { transform: translateX(-100%); }
-    50% { transform: translateX(-200%); }
-    70% { transform: translateX(-200%); }
-    75% { transform: translateX(-300%); }
-    95% { transform: translateX(-300%); }
-    100% { transform: translateX(0); }
-}
+    footer {
+        background: #353b48;
+        color: #fff;
+        text-align: center;
+        padding: 1rem;
+    }
 </style>
 </head>
 <body>
@@ -248,72 +209,45 @@ footer {
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="#skills">Skills & Certs</a></li>
                     <li><a href="#testimonials">Testimonials</a></li>
-                    <li><a href="#contact">Contact</a></li>
+                  <!--<li><a href="#contact">Contact</a></li>-->  
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section>
-        <div class="carousel">
-            <div class="carousel-inner">
-                <div class="card">
-                    <h2>Projects</h2>
-                    <p>Explore my latest projects.</p>
-                    <a href="/projects">View Projects</a>
-                </div>
-                <div class="card">
-                    <h2>Portfolio</h2>
-                    <p>Check out my work samples.</p>
-                    <a href="/portfolio">View Portfolio</a>
-                </div>
-                <div class="card">
-                    <h2>Blog</h2>
-                    <p>Read my thoughts and articles.</p>
-                    <a href="/blog">Visit Blog</a>
-                </div>
-                <div class="card">
-                    <h2>WriteUps</h2>
-                    <p>Find my write-ups on various topics.</p>
-                    <a href="/writeups">Read WriteUps</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <section id="home">
         <div class="hero">
-            <h2>Welcome to Matt's Cybers Space</h2>
-            <p>Cheezy Quote.</p>
+            <h2>"Be yourself.  Everyone else is already taken." </h2>
+            <h4>Oscar Wilde</h4>
+            <p></p>
             <a href="#projects" class="cta-button">Explore My Work</a>
         </div>
     </section>
 
     <section id="projects" class="grid-section">
-        <h2>Key Projects</h2>
+        <h2>Projects I've Worked On</h2>
         <div class="grid-container">
             <div class="project-card">
-                <img src="images/project1.webp" alt="Project 1">
+
                 <div class="project-info">
                     <h3>Capstone Project</h3>
-                    <p>Tasked with gaining root access to a system provided by my instructor, 
-                    documented each step into a comprehensive project report, of which can be read here: 
-                    <a href="Comprehensive%20Project%20report.pdf" target="_blank" >Comprehensive Project report</a>
+                    <p>Tasked with gaining root access to a system provided by my instructor. Documented each step in a comprehensive project report, which can be read here: 
+                        <a href="Comprehensive%20Project%20report.pdf" target="_blank">Comprehensive Project Report</a>
                     </p>
                 </div>
             </div>
             <div class="project-card">
-                <img src="images/project2.webp" alt="Project 2">
+
                 <div class="project-info">
-                    <h3>Penetration Testing on Financial Systems</h3>
-                    <p>Performed penetration testing on critical financial systems, mitigating security risks.</p>
+                    <h3>Home NAS </h3>
+                    <p>Reused old computer and set up an instance of TrueNAS-Scale to run various containers and media hosting.</p>
                 </div>
             </div>
             <div class="project-card">
-                <img src="images/project3.webp" alt="Project 3">
+
                 <div class="project-info">
-                    <h3>IoT Security Research</h3>
-                    <p>Conducted IoT device vulnerability research and proposed security enhancements for smart homes.</p>
+                    <h3>Magic Mirror</h3>
+                    <p>Scrapped old computer and monitor parts and created a "magic mirror" following similar project route as ths: <a href='https://www.raspberrypi.com/tutorials/how-to-build-a-super-slim-smart-mirror/'>How to build a super-slim smart mirror</a></p>
                 </div>
             </div>
         </div>
@@ -321,23 +255,20 @@ footer {
 
     <section id="skills" class="flex-section">
         <div class="skills-info">
-            <h2>Skills & Certifications</h2>
-            <p>With years of experience in cybersecurity, I have developed expertise in a variety of areas including:</p>
+            <h2>Skills & Certifications</h1>
+            <h3>Skills:</h3>
             <ul>
                 <li>Network Security</li>
                 <li>Penetration Testing</li>
-                <li>Incident Response</li>
-                <li>Python</li>
-                
+                <li>Scripting in Python</li>
+                <li>Web Application Security</li>
             </ul>
-            <h4>Certifications:</h4>
+            <h3>Certifications:</h3>
             <ul>
                 <li>CompTIA Security+</li>
-                <li>ISC2 CC</li>
+            <a href 
+    
             </ul>
-        </div>
-        <div class="skills-image">
-            <img src="images/skills.webp" alt="Cybersecurity skills image">
         </div>
     </section>
 
@@ -345,12 +276,12 @@ footer {
         <h2>What People Say</h2>
         <div class="testimonials-container">
             <div class="testimonial">
-                <p>"Gray's penetration testing skills are top-notch. He identified vulnerabilities we weren't even aware of!"</p>
-                <p>- John Doe, CTO at Secure Corp</p>
+                <p>"Matt's one of the greatest Cyber Security Analysts to ever live!"</p>
+                <p>- My Dad</p>
             </div>
             <div class="testimonial">
-                <p>"Their security audit helped secure our network infrastructure and brought us up to industry standards."</p>
-                <p>- Jane Smith, Cybersecurity Manager at FinTech Ltd</p>
+                <p>"Please don't talk to me."</p>
+                <p>- Guy on the street</p>
             </div>
         </div>
     </section>
